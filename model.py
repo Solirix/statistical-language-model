@@ -170,3 +170,10 @@ def generate_seq(model, mapping, seq_length, seed_text, n_chars):
 		# append to input
 		in_text += char
 	return in_text
+
+# loop for input consistently
+
+while True:
+    inp = input("Input a base string!\n")
+    print(len(inp))
+    print(generate_seq(model, mapping, 30, inp.lower(), 15))
